@@ -1,0 +1,20 @@
+// reset
+@import './reset/reset';
+
+// utils 
+@import './utils/variables';
+@import './utils/mixins'; 
+@import './utils/common'; 
+
+// components
+@import './components/headerComponents/header';
+@import './components/indexComponents/solutions';
+@import './components/indexComponents/benefits';
+@import './components/indexComponents/services';
+@import './components/indexComponents/teams';
+@import './components/indexComponents/clients';
+@import './components/portfolioComponents/filter';
+@import './components/portfolioComponents/projects';
+
+// footer
+@import './components/footerComponents/footer';
