@@ -53,6 +53,10 @@
         background-color: var(--active-color);
         cursor: pointer;
     }
+
+    &:hover .team-icons__social-network {
+        fill: var(--primary-white-color);
+    }
 }
 
 .team-icons__social-network {
@@ -60,12 +64,8 @@
     height: 20px;
 
     fill: var(--primary-link-color);
-}
 
-.team-icons__social-network:hover {
-    fill: var(--primary-white-color);
-}
-
-.team-icons__item:hover .team-icons__social-network {
-    fill: var(--primary-white-color);
+    &:hover {
+        fill: var(--primary-white-color);
+    }
 }

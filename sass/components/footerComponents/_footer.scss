@@ -24,6 +24,10 @@
     border-radius: 50%;
     background-color: var(--footer-item-link);
 
+    &:last-child {
+        margin-right: 0;
+    }
+
     &:hover,
     &:focus {
         background-color: var(--active-color);
@@ -32,17 +36,9 @@
     }
 }
 
-.footer-icons__item:last-child {
-    margin-right: 0;
-}
 
 .footer-icons__link {
     fill: var(--primary-white-color);
-}
-
-
-.footer-icons__item:focus {
-    background-color: var(--active-color);
 }
 
 .footer-list__text {
@@ -103,6 +99,7 @@
 
     }
 
+    &:hover,
     &:focus {
         border: 1px solid var(--active-color);
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);

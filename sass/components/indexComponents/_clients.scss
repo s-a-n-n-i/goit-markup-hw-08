@@ -26,23 +26,24 @@
     width: 170px;
     height: 92px;
     border: 1px solid var(--primary-link-color);
+
+    &:hover {
+        border: 1px solid var(--active-color);
+        cursor: pointer;
+    }
+
+    &:hover .clients-list__link {
+        fill: var(--active-color);
+    }
+
 }
 
 .clients-list__link {
     fill: var(--primary-link-color);
 
-    &:hover{
+    &:hover,
+    &:focus{
         fill: var(--active-color);
     }
 }
 
-
-.clients-list__item:hover {
-    border: 1px solid var(--active-color);
-    cursor: pointer;
-}
-
-.clients-list__item:hover .clients-list__link,
-.clients-list__link:focus {
-    fill: var(--active-color);
-}
