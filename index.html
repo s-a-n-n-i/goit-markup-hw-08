@@ -44,7 +44,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="solution">
+        <section class="solution section">
             <h1 class="solution__title">Ефективні рішення для <br> вашого бізнесу</h1>
             <button type="button" class="button-open" data-modal-open>Замовити послугу</button>
             <div class="backdrop is-hidden" data-modal>
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </section>
-        <section class="benefits">
+        <section class="benefits section">
             <div class="container">
                 <ul class="benefits-list">
                     <li class="benefits-list__item">
@@ -141,25 +141,33 @@
                 </ul>
             </div>
         </section>
-        <section class="services">
+        <section class="services section">
             <div class="container">
                 <h2 class="services__title title">Чим ми займаємося</h2>
                 <ul class="services-list">
-                    <li class="services-list__item"><img src="./images/img1.jpg" alt="Розробка вебсайтів" width="370"
-                            height="294"></li>
-                    <li class="services-list__item"><img src="./images/img2.jpg" alt="Створення мобільних додатків"
-                            width="370" height="294"></li>
-                    <li class="services-list__item"><img src="./images/img3.jpg" alt="Веб-дизайн" width="370"
-                            height="294"></li>
+                    <li class="services-list__item"><img class="img1" src="./images/img1.jpg" alt="Розробка вебсайтів" width="370"
+                            height="294">
+                        <p class="services-list__text">Розробка вебсайтів</p>
+                    </li>
+                    <li class="services-list__item"><img class="img2" src="./images/img2.jpg" alt="Створення мобільних додатків"
+                            width="370" height="294">
+                        <p class="services-list__text">Створення мобільних додатків</p>
+                    </li>
+                    <li class="services-list__item"><img class="img3" src="./images/img3.jpg" alt="Веб-дизайн" width="370"
+                            height="294">
+                        <p class="services-list__text">Веб-дизайн</p>
+                    </li>
                 </ul>
             </div>
         </section>
-        <section class="team">
+        <section class="team section">
             <div class="container">
                 <h2 class="team__title title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img src="./images/img4.jpg" alt="Член команди" width="270" height="260">
+                        <picture>
+                            <img class="team-list__image" src="./images/img4.jpg" alt="Член команди" width="270" height="260">
+                        </picture>
                         <h3 class="team-list__title">Ігор Дем'яненко</h3>
                         <p lang="en" class="team-list__text">Product Designer</p>
                         <ul class="team-icons">
@@ -194,7 +202,9 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img5.jpg" alt="Член команди" width="270" height="260">
+                        <picture>
+                            <img class="team-list__image" src="./images/img5.jpg" alt="Член команди" width="270" height="260">
+                        </picture>
                         <h3 class="team-list__title">Ольга Рєпіна</h3>
                         <p lang="en" class="team-list__text">Frontend Developer</p>
                         <ul class="team-icons">
@@ -229,7 +239,9 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img6.jpg" alt="Член команди" width="270" height="260">
+                        <picture>
+                            <img class="team-list__image" src="./images/img6.jpg" alt="Член команди" width="270" height="260">
+                        </picture>
                         <h3 class="team-list__title">Микола Тарасов</h3>
                         <p lang="en" class="team-list__text">Marketing</p>
                         <ul class="team-icons">
@@ -264,7 +276,9 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img7.jpg" alt="Член команди" width="270" height="260">
+                        <picture>
+                            <img class="team-list__image" src="./images/img7.jpg" alt="Член команди" width="270" height="260">
+                        </picture>
                         <h3 class="team-list__title">Михайло Єрмаков</h3>
                         <p lang="en" class="team-list__text">UI Designer</p>
                         <ul class="team-icons">
@@ -301,7 +315,7 @@
                 </ul>
             </div>
         </section>
-        <section class="clients">
+        <section class="clients section">
             <div class="container">
                 <h2 class="clients__title">Постійні клієнти</h2>
                 <ul class="clients-list">
@@ -419,6 +433,7 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <!-- <script src="./js/mobile-menu.js"></script> -->
 </body>
 
 </html>

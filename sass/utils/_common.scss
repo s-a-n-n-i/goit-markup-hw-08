@@ -1,7 +1,21 @@
+@use './mixins' as *;
+
 .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+
+    @include mobile {
+        width: 480px;
+    }
+
+    @include tablet {
+        width: 768px;
+    }
+
+    @include desktop {
+        width: 1200px;
+    }
 }
 
 body {
@@ -25,6 +39,15 @@ a {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 60px 0;
+
+    @include desktop {
+        padding: 94px 0;
+    }
 }
 
 .title {
@@ -34,28 +57,16 @@ img {
     text-align: center;
 
     color: var(--primary-title-color);
+
+    @media (min-width: 768px) {
+        font-size: 28px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 36px;
+    }
 }
 
-
-@media screen and (min-width: 480px) {
-    .container {
-        width: 480px;
-    } 
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    } 
-}
-
-@media screen and (min-width: 1140px) {
-    .container {
-        width: 1140px;
-    } 
-}
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    } 
+.no-sccroll {
+    overflow: hidden;
 }

@@ -1,14 +1,37 @@
 .benefits {
     display: flex;
-    padding: 94px 0;
 }
+
 
 .benefits-list {
     display: flex;
+
+    @include tablet {
+        flex-wrap: wrap;
+    }
 }
 
+
+
 .benefits-list__item {
+    width: 270px;
+    height: 224px;
     margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tabletOnly {
+        width: 354px;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+
 }
 
 .benefits-list__icon {
@@ -21,6 +44,9 @@
     background-color: #F5F4FA;
     border-radius: 4px;
 
+    @include tabletOnly {
+        width: 354px;
+    }
 }
 
 .benefits-list__title {
